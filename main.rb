@@ -4,7 +4,6 @@ require 'colorize'
 
 puts "Всем привет!".red.on_white
 
-
 word = File.readlines(__dir__ + '/data/words.txt', encoding: 'UTF-8', chomp: true).sample
 game = Game.new(word)
 console_interface = ConsoleInterface.new(game)
